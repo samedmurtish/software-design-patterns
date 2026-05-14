@@ -32,3 +32,11 @@ Factory Method (Creational): Nesne yaratma sorumluluğunu bu sınıftan alıp bi
 Strategy Pattern (Behavioral): Her bildirim gönderme algoritmasını (E-posta gönderimi, SMS gönderimi) kendi sınıfına ayırabilirsin. Böylece NotificationService hangi stratejinin kullanılacağını bilmeden sadece ortak bir arayüzü çağırır.
 
 Adapter Pattern (Structural): İleride farklı SMS veya E-posta sağlayıcıları kullanman gerekirse, onların farklı metod isimlerini kendi sistemine uyumlu hale getirmek için kullanılabilir.  
+
+# Karşılaştırma:
+
+- İlk Bakış: Kodun karmaşık olduğunu ve if-else yapısının ileride baş ağrıtacağını zaten fark etmiştim.
+
+- AI Katkısı: Yapay zeka ile bu kodu tartıştığımızda, fark ettiğim bu "karmaşıklığın" aslında literatürde Single Responsibility Principle (SRP) ve Open/Closed Principle (OCP) ihlalleri olduğunu teknik olarak teyit ettim.   
+
+- Sonuç: AI ile görüşlerimizin paralel olması beni sevindirdi. Çünkü bu hatalar bariz olsa da profesyonel hayatta sistemin kilitlenmesine yol açacak kadar tehlikeli. Beni bir Yazılım Mühendisi olarak öne çıkaracak asıl unsurun, sadece "çalışan" kod değil, bu prensiplere uygun "sürdürülebilir" mimariler kurmak olduğunu bu analizle daha iyi anladım.
