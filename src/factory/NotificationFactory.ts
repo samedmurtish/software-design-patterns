@@ -2,6 +2,7 @@ import { INotification } from "../types/INotification";
 import { EmailNotification } from "../services/EmailNotification";
 import { SmsNotification } from "../services/SmsNotification";
 import { PushNotification } from "../services/PushNotification";
+import { LegacySmsAdapter } from "../adapters/LegacySmsAdapter";
 
 export class NotificationFactory {
   static createNotification(type: string): INotification {
@@ -17,6 +18,10 @@ export class NotificationFactory {
 
     if (normalizedType === "push") {
       return new PushNotification();
+    }
+
+    if (normalizedType === "legacy-sms") {
+      return new LegacySmsAdapter();
     }
 
     throw new Error("Unknown notification type");
