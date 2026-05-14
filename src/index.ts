@@ -20,7 +20,7 @@ app.post("/notify", (req, res) => {
     return;
   }
 
-  const result = service.send(type as any, payload);
+  const result = service.send(type, payload);
   if (result.success) {
     res.json(result);
   } else {
