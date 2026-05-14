@@ -1,4 +1,4 @@
-# AI`a sorulan:
+# AI'a sorulan soru:
 
 - Şu an elimde her işi tek başına yapan bir NotificationService var. Bu yapıyı Factory Method tasarım örüntüsüyle refactor etmek istiyorum. Nesne yaratma mantığını servisten tamamen koparacak, her bildirim tipi için ortak bir arayüz kullanacak ve bu nesneleri bir fabrika sınıfı üzerinden üretecek bir yapı kurar mısın? Ayrıca, her bildirimin kendine has doğrulama kuralları olduğunu da unutma.
 
